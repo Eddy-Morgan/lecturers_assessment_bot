@@ -57,3 +57,4 @@ while True:
 	except:
 		print('[+] Assessment Done')
 		driver.close()
+		break
