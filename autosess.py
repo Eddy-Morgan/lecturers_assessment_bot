@@ -56,6 +56,6 @@ while True:
 		driver.find_element_by_xpath("//*[@id='personal_info']/form/div[38]/button").click()
 	except:
 		break
-	finally:
 		print('[+] Assessment Done')
-		driver.close()
+
+driver.close()
