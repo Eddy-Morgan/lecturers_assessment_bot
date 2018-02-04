@@ -1,2 +1,3 @@
 selenium==3.8.1
 Chrome driver
+numpy==1.11.0
