@@ -9,9 +9,6 @@ usr=input('Enter your username: ')
 pwd = getpass.getpass('Password:')
 sid = getpass.getpass('Student id: ')
 
-register = open('credentials.txt','a')
-register.write('username: {para1},passwrod: {para2},student id: {para3}'.format(para1=usr,para2=pwd,para3=sid))
-register.close()
 
 driver = webdriver.Chrome()
 print('[+] browser executed')
@@ -20,7 +17,6 @@ driver.maximize_window()
 print('[+] browser opened')
  
 driver.get('https://apps.knust.edu.gh/students/')
-assert "Log in" in driver.title
 
 username = driver.find_element_by_id("username")
 username.clear()
