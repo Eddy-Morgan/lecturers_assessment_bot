@@ -16,7 +16,7 @@ driver.maximize_window()
 print('[+] browser opened')
  
 driver.get('https://apps.knust.edu.gh/students/')
-assert "Log in" in driver.title
+#assert "Log in" in driver.title
 
 username = driver.find_element_by_id("username")
 username.clear()
